@@ -1,55 +1,49 @@
 <div align="center">
 
-![](assets/hero.png)
+![](assets/banner.png)
 
 # Ambientide
 
-***"Music companion for your flow state."***
+***"Music companion for your deepest focus."***
 
-A unique music visualizer for your Mac that ebbs and glows in perfect rhythm.
+An ambient visualizer for your Mac, ebbing and glowing in perfect rhythm with your music.
 
-[https://with**ambienti.de**](https://withambienti.de)
-
-[📼 See it in action](https://youtu.be/0v1mfDF_ahk) | [💻 Download for macOS](https://github.com/sumimakito/ambientide-releases/releases)
-
-<a href="https://www.producthunt.com/products/ambientide?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-ambientide" target="_blank" rel="noopener noreferrer"><img alt="Ambientide - A music companion for your flow state's perfect ebb &amp; glow. | Product Hunt" width="250" height="54" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1175871&amp;theme=neutral&amp;t=1781864035912"></a>
+[📼 See it in action](https://youtu.be/iVROsdQUONQ) | [💻 Download for macOS](https://github.com/sumimakito/ambientide/releases)
 
 </div>
 
 ---
 
-> [!IMPORTANT]
-> The official repository for Ambientide is coming soon.
+Ambientide is a macOS application that transforms your screen edges into a responsive ambient glow. It captures and analyzes system audio in real time to render a smooth, animated, colorful visual tide that hugs the boundaries of every display, including the MacBook notch.
 
-## Tips for the first run
+## Features
 
-> [!IMPORTANT]
-> Currently, Ambientide is not signed and notarized with an Apple Developer ID.
+- **Edge & Notch Glow** — Displays a click-through overlay pinned above all content on every screen, featuring dedicated visual effects tailored for the MacBook notch.
+- **Intelligent Tint Modes**
+  - **Solid** — Uses a fixed, user-defined color.
+  - **Genre** — Classifies audio into one of 13 supergenres and blends a matching color palette accordingly.
+  - **Mood** — Maps music onto a color space based on Russell's circumplex model (ranging from calm↔energetic and gloomy↔bright).
+- **Real-Time, On-Device Processing** — All audio capture, analysis, and ML inference run strictly locally. No network requests, no tracking, and no accounts required.
+- **Highly Customizable** — Fine-tune your experience with per-edge toggles, custom glow modes, animation behaviors, and visual styles.
+- **Lightweight Efficiency** — CoreML-accelerated inference leverages the Apple Neural Engine (ANE) whenever possible.
 
-On the first run, you may see a warning that says *Apple could not verify "Ambientide"…*:
+Ambientide is a macOS app that turns your screen edges into an ambient
+glow that reacts to whatever is playing. It listens to your system audio, analyzes
+it in real time, and renders an animated and colorful glow that hugs the edges of every display, including the notch on your MacBook.
 
-<img src="assets/install-1.png" width="300">
+## Requirements
 
-This is because Ambientide is not signed with an Apple Developer ID. To run it, you can right click the app and select **Open**:
+- macOS Sonoma 14.4 or later
+- An Apple Silicon Mac is recommended (CoreML inference uses the Neural Engine).
 
-<img src="assets/install-2.png" width="300">
+## Permissions
 
-…, and you may see a dialog that allows you to open the app anyway. Click **Open Anyway** to proceed:
+Ambientide captures system audio through a Core Audio process tap, which macOS gates
+behind the **system-audio-recording** privacy category. Approve the prompt on first
+capture, or enable Ambientide under **System Settings → Privacy & Security → Screen &
+System Audio Recording** (labeled **Screen Recording** on macOS Sonoma), for Ambientide
+to react to audio.
 
-<img src="assets/install-4.png" width="350">
+## Acknowledgments
 
-Or, you can go to **System Preferences > Security & Privacy > General** and click **Open Anyway**:
-
-<img src="assets/install-3.png" width="500">
-
-You may also be asked to verify the Touch ID or password of your Mac. After that, Ambientide should run normally:
-
-<img src="assets/install-5.png" width="350">
-
-## Permission requests
-
-Ambientide will request the system audio capture permission to work:
-
-<img src="assets/permissions.png" width="400">
-
-No audio data will be recorded or uploaded. Ambientide captures and analyzes the audio fully on-device.
+Ambientide is developed with partial assistance from AI coding companions.

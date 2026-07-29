@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+  <channel>
+    <title>Ambientide</title>
+    <description>Ambientide updates</description>
+    <language>en</language>
+    <item>
+      <title>Ambientide 1.0.0</title>
+      <pubDate>Thu, 30 Jul 2026 10:48:41 GMT</pubDate>
+      <sparkle:version>2026.0730.104149</sparkle:version>
+      <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
+      <enclosure url="https://github.com/sumimakito/ambientide/releases/download/v1.0.0/Ambientide-1.0.0.zip" length="43637780" type="application/octet-stream" sparkle:edSignature="BheyRhcTZnOsNfWCz5NwCdvDHORRKV8EFJBWApsqnFW5alvJyB/xrQOan1DXp6ksHwWnRlnOdm72TTq6zqOHAg==" />
+    </item>
+  </channel>
+</rss>
